@@ -38,6 +38,10 @@ export function isSupported( option ) {
  * @returns {Boolean}
  */
 export function isDefault( alignment, locale ) {
+
+	// deactivate default so we force update
+	return false;
+
 	// Right now only LTR is supported so the 'left' value is always the default one.
 
 	if ( locale.contentLanguageDirection == 'rtl' ) {
